@@ -1,0 +1,220 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.7;
+    color: #333;
+    background-color: #f9f7f4;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 2px solid #d4c5b9;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #5a4a3a;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: #7a6a5a;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.issue {
+    font-size: 1em;
+    color: #8a7a6a;
+    margin-top: 15px;
+}
+
+/* Main Content */
+main {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Story Articles */
+article.story {
+    margin-bottom: 60px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+article.story:last-of-type {
+    border-bottom: none;
+}
+
+article.story h2 {
+    font-size: 2em;
+    color: #5a4a3a;
+    margin-bottom: 20px;
+    font-weight: normal;
+    text-align: center;
+}
+
+/* Story Text */
+.story-text {
+    margin-bottom: 40px;
+}
+
+.story-text p {
+    margin-bottom: 1.2em;
+    text-align: justify;
+}
+
+/* Comic Panels */
+.comic-panels {
+    background-color: #f5f3f0;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.comic-panels h3 {
+    font-size: 1.5em;
+    color: #5a4a3a;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.single-panel-row {
+    width: 100%;
+}
+
+.single-panel-row img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Voting Section */
+.voting-section {
+    background-color: #f5f3f0;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.voting-section h2 {
+    font-size: 2em;
+    color: #5a4a3a;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.voting-section p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.vote-button {
+    display: inline-block;
+    background-color: #7a6a5a;
+    color: #fff;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.vote-button:hover {
+    background-color: #5a4a3a;
+}
+
+.voting-note {
+    font-size: 0.95em;
+    color: #888;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+    border-top: 2px solid #d4c5b9;
+    color: #888;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+.footer-note {
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .panels-grid {
+        grid-template-columns: 1fr;
+    }
+
+    article.story h2 {
+        font-size: 1.6em;
+    }
+
+    .voting-section {
+        padding: 25px;
+    }
+
+    .vote-button {
+        padding: 12px 30px;
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.6em;
+    }
+
+    .subtitle {
+        font-size: 1em;
+    }
+
+    article.story h2 {
+        font-size: 1.4em;
+    }
+
+    .story-text p {
+        text-align: left;
+    }
+}
